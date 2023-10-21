@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {FaPlus} from 'react-icons/fa'
 
 function TodoInput(props) {
   const [InputText, setInputText] = useState('');
@@ -32,16 +33,18 @@ function TodoInput(props) {
           onChange={e => setInputText(e.target.value)}
           onKeyDown={handleEnterPress}
         />
-        <div className="input-group-append">
+        {/* <div className="input-group-append"> */}
           <button
-            className="btn btn-outline-success"
+            className="btn btn-primary ml-2 add-btn"
             onClick={handleAddClick}
-            style={{ marginLeft: '10px' }}
+            style={{ marginLeft: '1px' }}
           >
-            Add
+           <FaPlus /> 
           </button>
+       
         </div>
-      </div>
+      {/* </div> */}
+  
     </div>
   );
 }
