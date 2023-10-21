@@ -1,5 +1,6 @@
 import React from 'react';
 import './../App.css'
+import {FaTrash} from 'react-icons/fa'
 
 function TodoList(props) {
   return (
@@ -12,7 +13,7 @@ function TodoList(props) {
             props.deleteItem(props.index);
           }}
         >
-          Delete
+           <FaTrash />
         </button>
       </div>
     </li>
