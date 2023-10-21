@@ -33,7 +33,6 @@ function TodoInput(props) {
           onChange={e => setInputText(e.target.value)}
           onKeyDown={handleEnterPress}
         />
-        {/* <div className="input-group-append"> */}
           <button
             className="btn btn-primary ml-2 add-btn"
             onClick={handleAddClick}
@@ -42,9 +41,7 @@ function TodoInput(props) {
            <FaPlus /> 
           </button>
        
-        </div>
-      {/* </div> */}
-  
+        </div>  
     </div>
   );
 }
